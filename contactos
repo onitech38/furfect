@@ -12,11 +12,11 @@
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="agendamento.html">Agendamento</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="comentarios.html">Comentários</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
             </ul>
         </nav>
     </header>
