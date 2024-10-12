@@ -22,14 +22,13 @@ Backend: Node.js e Express para processar o formulário e enviar o e-mail.
                 <li><a href="about.html">Sobre Nós</a></li>
                 <li><a href="contactos.html">Contactos</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="agendamento.html">Agendamento</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="comentarios.html">Comentários</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="agendamento">
+        <section id="home">
             <h2>Preencha o formulário abaixo para agendar uma consulta</h2>
             <form id="agendamentoForm">
                 <label for="nome">Nome:</label>
