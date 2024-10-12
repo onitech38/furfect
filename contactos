@@ -17,12 +17,11 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="comentarios.html">Comentários</a></li>
                 <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="contato">
+        <section id="home">
             <h2>Entre em Contato Conosco</h2>
             <p>Endereço: Rua dos Animais, 123, Centro, Cidade</p>
             <p>Telefone: (11) 1234-5678</p>
