@@ -12,7 +12,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
                 <li><a href="agendamento.html">Agendamento</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="comentarios.html">Comentários</a></li>
@@ -20,7 +21,7 @@
         </nav>
     </header>
     <main>
-        <section id="servicos">
+        <section id="home">
             <article>
                 <h2>Consulta Veterinária</h2>
                 <p>Nossos veterinários estão prontos para cuidar da saúde do seu pet, oferecendo consultas detalhadas e tratamentos personalizados.</p>
