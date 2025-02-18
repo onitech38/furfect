@@ -1,8 +1,549 @@
-<footer>
-    <div class="footer_header">
+<!DOCTYPE html>
+<html lang="pt-BR, en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Galdeano&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/FURFECT/resources/img/logo/FurfectLogo.svg">
+    <link rel="stylesheet" href="\base.css">  
+    <link rel="stylesheet" href="home.css">  
+    
+    <title>Furfect-Health & Care</title>
+</head>
+<body class="home">
+  
+  <header>
+    <div class="header_sub">
+      <div class="contacts">
+        <h6 class="title contactWeek">Week: 10h-20h +351 91 33 333 33</h6>
+        <h6 class="title contactUrgent">24h/7: +351 21 222 22 22</h6>
+      </div>
+      
+      <form id="language-selector" action="#" method="GET">
+        <div>
+            <a class="btn btn--fx box--orange navbar_btn" type="button" onclick="changeLanguage('pt-BR')">PT</a>
+            <a class="btn btn--fx box--orange navbar_btn"type="button" onclick="changeLanguage('en')">EN</a>
+        </div>
+      </form>
+    </div>    
+    
+    <nav class="nav__wrapper brnd_style--out box--light">
+      <div class="brand">
+        <a href="home.html">
+          <svg class="svg__brand-nav" width="275" height="84" viewBox="0 0 275 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Brand_var1">
+                <g id="name">
+                    <g id="green">
+                        <path id="Health &#38; Care" d="M111.577 69.3955L111.852 65.4937V61.3553L111.577 57.4732H113.784L113.508 61.375V62.4392H119.577V61.3553L119.301 57.4732H121.508L121.233 61.375V65.5134L121.508 69.3955H119.301L119.577 65.4937V63.8186H113.508V65.5134L113.784 69.3955H111.577ZM128.092 69.6911C126.909 69.6911 125.944 69.297 125.195 68.5087C124.446 67.7205 124.072 66.6366 124.072 65.2572C124.072 63.8646 124.453 62.7151 125.214 61.8086C125.976 60.9021 126.903 60.4489 127.993 60.4489C129.097 60.4489 129.924 60.7182 130.476 61.2568C131.028 61.7954 131.304 62.5509 131.304 63.523C131.304 63.8777 131.271 64.3047 131.205 64.8039L125.885 64.9813C125.885 66.098 126.075 66.9651 126.456 67.5825C126.85 68.1869 127.402 68.489 128.111 68.489C129.044 68.489 129.905 68.154 130.693 67.484L131.225 68.9423C130.332 69.4415 129.287 69.6911 128.092 69.6911ZM125.924 63.9566L129.51 63.7989C129.497 62.9975 129.366 62.4392 129.116 62.1239C128.867 61.8086 128.459 61.6509 127.895 61.6509C127.33 61.6509 126.89 61.7101 126.574 61.8283C126.246 62.183 126.029 62.8924 125.924 63.9566ZM135.694 69.6911C134.853 69.6911 134.203 69.4678 133.743 69.0211C133.297 68.5613 133.073 67.9372 133.073 67.149C133.073 66.3607 133.395 65.7761 134.039 65.3951C134.683 65.0141 136.036 64.6332 138.098 64.2522C138.098 63.2537 137.987 62.564 137.763 62.183C137.54 61.802 137.139 61.6115 136.561 61.6115C136.246 61.6115 135.996 61.6247 135.812 61.6509L134.157 63.1092L133.27 61.6312C134.282 60.8298 135.412 60.4291 136.66 60.4291C138.722 60.4291 139.754 61.467 139.754 63.5427V67.1884L140.108 69.4152L138.276 69.6911L138.197 68.7058C137.382 69.3627 136.548 69.6911 135.694 69.6911ZM134.748 67.0702C134.748 67.5037 134.88 67.8453 135.142 68.0949C135.418 68.3445 135.839 68.4693 136.404 68.4693C136.982 68.4693 137.547 68.2657 138.098 67.8584V65.3754C136.837 65.5593 135.766 65.8418 134.886 66.2228C134.794 66.5775 134.748 66.86 134.748 67.0702ZM142.534 69.3955L142.81 65.4937V58.222L142.515 56.1923L144.643 55.9952L144.426 59.8577V65.5134L144.643 69.3955H142.534ZM146.558 61.7889L146.499 61.0203L148.273 60.4489L148.923 58.2023H149.77L149.888 60.4489H152.371L152.312 61.4933L149.829 61.6706V66.5775C149.829 67.2738 149.895 67.7599 150.026 68.0358C150.171 68.2985 150.447 68.4299 150.854 68.4299C151.274 68.4299 151.721 68.3642 152.194 68.2328L152.017 69.3561C151.57 69.5794 150.985 69.6911 150.263 69.6911C149.54 69.6911 149.002 69.494 148.647 69.0999C148.305 68.7058 148.135 68.0292 148.135 67.0702C148.135 66.7417 148.174 64.9813 148.253 61.7889H146.558ZM154.158 69.3955L154.434 65.4937V58.222L154.138 56.1923L156.267 55.9952L156.05 59.8577V61.4933C157.114 60.797 158.185 60.4489 159.262 60.4489C160.641 60.4489 161.331 61.3553 161.331 63.1683V69.3955L159.4 69.494L159.676 65.2572V63.1486C159.676 62.6625 159.597 62.3209 159.439 62.1239C159.282 61.9137 159.019 61.8086 158.651 61.8086C157.85 61.8086 156.983 62.0516 156.05 62.5377V65.5134L156.267 69.3955H154.158ZM174.807 63.1683L176.679 63.0895C176.679 64.758 176.403 66.1243 175.851 67.1884L176.62 67.9372L178.334 69.1393V69.3364L175.95 69.829L174.826 68.5284C173.986 69.3035 172.921 69.6911 171.634 69.6911C170.346 69.6911 169.348 69.4284 168.639 68.9029C167.942 68.3642 167.594 67.5563 167.594 66.479C167.594 65.7827 167.778 65.2046 168.146 64.7448C168.514 64.2719 169.026 63.8318 169.683 63.4245C169.039 62.7282 168.632 62.1699 168.461 61.7495C168.304 61.3291 168.225 60.7379 168.225 59.9759C168.225 59.2008 168.553 58.5439 169.21 58.0053C169.867 57.4535 170.675 57.1776 171.634 57.1776C172.606 57.1776 173.368 57.4141 173.92 57.887C174.472 58.3468 174.747 58.9906 174.747 59.8183C174.747 60.6328 174.511 61.3028 174.038 61.8283C173.565 62.3538 172.895 62.8859 172.028 63.4245L174.885 66.2425C174.977 65.7827 175.023 65.3886 175.023 65.0601L174.807 63.1683ZM174.058 67.7402L170.589 64.3507C169.736 64.9682 169.309 65.5791 169.309 66.1834C169.309 67.7205 170.136 68.489 171.792 68.489C172.764 68.489 173.519 68.2394 174.058 67.7402ZM171.161 62.5771C171.805 62.1961 172.297 61.8086 172.639 61.4145C172.98 61.0203 173.151 60.5277 173.151 59.9365C173.151 58.8329 172.619 58.2812 171.555 58.2812C171.161 58.2812 170.754 58.3403 170.333 58.4585C170.018 58.8526 169.86 59.3256 169.86 59.8774C169.86 60.4291 169.965 60.9087 170.176 61.3159C170.399 61.7101 170.727 62.1305 171.161 62.5771ZM189.389 69.6911C187.602 69.6911 186.197 69.1525 185.172 68.0752C184.16 66.9979 183.655 65.5002 183.655 63.5822C183.655 61.6641 184.239 60.1204 185.408 58.9512C186.578 57.7688 188.134 57.1776 190.079 57.1776C191.077 57.1776 192.109 57.3747 193.173 57.7688L192.542 59.838L190.138 58.5373C188.456 58.5373 187.287 58.8921 186.63 59.6015C185.973 60.3109 185.645 61.5064 185.645 63.188C185.645 64.8565 185.986 66.144 186.67 67.0505C187.366 67.9438 188.266 68.3905 189.369 68.3905C190.473 68.3905 191.563 67.9438 192.641 67.0505L193.271 68.7649C192.089 69.3824 190.795 69.6911 189.389 69.6911ZM197.661 69.6911C196.82 69.6911 196.17 69.4678 195.71 69.0211C195.264 68.5613 195.04 67.9372 195.04 67.149C195.04 66.3607 195.362 65.7761 196.006 65.3951C196.65 65.0141 198.003 64.6332 200.065 64.2522C200.065 63.2537 199.954 62.564 199.73 62.183C199.507 61.802 199.106 61.6115 198.528 61.6115C198.213 61.6115 197.963 61.6247 197.78 61.6509L196.124 63.1092L195.237 61.6312C196.249 60.8298 197.379 60.4291 198.627 60.4291C200.689 60.4291 201.721 61.467 201.721 63.5427V67.1884L202.075 69.4152L200.243 69.6911L200.164 68.7058C199.349 69.3627 198.515 69.6911 197.661 69.6911ZM196.715 67.0702C196.715 67.5037 196.847 67.8453 197.109 68.0949C197.385 68.3445 197.806 68.4693 198.371 68.4693C198.949 68.4693 199.514 68.2657 200.065 67.8584V65.3754C198.804 65.5593 197.734 65.8418 196.853 66.2228C196.761 66.5775 196.715 66.86 196.715 67.0702ZM204.501 69.3955L204.777 65.4937V62.7348L204.482 60.705L206.472 60.508L206.393 61.9859C206.853 61.4342 207.26 61.04 207.615 60.8036C207.97 60.5671 208.338 60.4489 208.719 60.4489C209.113 60.4489 209.5 60.5342 209.881 60.705L209.349 62.3998L207.576 61.8677C207.089 62.3012 206.662 62.853 206.295 63.523V65.5134L206.511 69.3955H204.501ZM214.788 69.6911C213.605 69.6911 212.64 69.297 211.891 68.5087C211.142 67.7205 210.768 66.6366 210.768 65.2572C210.768 63.8646 211.149 62.7151 211.911 61.8086C212.673 60.9021 213.599 60.4489 214.689 60.4489C215.793 60.4489 216.62 60.7182 217.172 61.2568C217.724 61.7954 218 62.5509 218 63.523C218 63.8777 217.967 64.3047 217.901 64.8039L212.581 64.9813C212.581 66.098 212.771 66.9651 213.152 67.5825C213.546 68.1869 214.098 68.489 214.807 68.489C215.74 68.489 216.601 68.154 217.389 67.484L217.921 68.9423C217.028 69.4415 215.983 69.6911 214.788 69.6911ZM212.62 63.9566L216.207 63.7989C216.193 62.9975 216.062 62.4392 215.812 62.1239C215.563 61.8086 215.156 61.6509 214.591 61.6509C214.026 61.6509 213.586 61.7101 213.27 61.8283C212.942 62.183 212.725 62.8924 212.62 63.9566Z" fill="#00B295"/>
+                    </g>
+                    <g id="dark">
+                        <path id="furfect" d="M128.304 38.7094C128.304 42.5456 127.319 45.6855 125.348 48.129C123.404 50.5989 120.75 51.8338 117.387 51.8338C114.05 51.8338 111.83 51.0062 110.726 49.3508C110.043 48.2998 109.702 47.0123 109.702 45.4884C109.702 43.9907 109.833 42.493 110.096 40.9954L115.141 12.4606H121.841L120.658 19.0425H130.472L129.487 24.5997H121.762C123.627 26.0974 125.178 28.0418 126.413 30.4328C127.674 32.8238 128.304 35.5827 128.304 38.7094ZM118.412 46.1978C119.226 46.1978 119.923 45.5409 120.501 44.2272C121.079 42.9134 121.368 41.1793 121.368 39.0247C121.368 36.8964 121.144 34.7419 120.698 32.5611C120.277 30.3802 119.765 28.6724 119.161 27.4374L116.796 40.9559C116.638 41.8756 116.559 42.677 116.559 43.3601C116.559 45.2519 117.177 46.1978 118.412 46.1978ZM150.594 31.9305C150.594 32.6136 150.936 32.9552 151.619 32.9552C152.328 32.9552 152.92 32.8238 153.393 32.5611L153.196 37.0147C151.934 38.0394 150.515 38.5518 148.939 38.5518C145.97 38.5518 144.354 37.4088 144.091 35.1229C142.515 37.4088 140.386 38.5518 137.706 38.5518C135.053 38.5518 133.332 37.9474 132.543 36.7388C132.018 35.9768 131.755 35.1097 131.755 34.1376C131.755 33.1654 131.834 32.272 131.992 31.4575L134.199 19.0425H140.899L139.046 29.5263C138.968 29.9992 138.928 30.4722 138.928 30.9451C138.928 32.2064 139.638 32.837 141.056 32.837C142.239 32.837 143.185 32.4297 143.894 31.6152L146.141 19.0425H152.841L150.634 31.4575C150.607 31.6152 150.594 31.7728 150.594 31.9305ZM174.961 23.0626C174.961 23.956 174.803 24.8231 174.488 25.6639C174.199 26.5047 173.91 27.1221 173.62 27.5163L173.187 28.068H167.236C167.893 27.4637 168.221 26.7149 168.221 25.8215C168.221 25.3486 168.063 24.9676 167.748 24.6785C167.459 24.3632 167.052 24.2056 166.526 24.2056C165.633 24.2056 164.858 24.6523 164.201 25.5456L161.994 38H155.294L158.644 19.0425H164.871L164.398 21.6832C165.896 19.5549 167.709 18.4908 169.837 18.4908C171.545 18.4908 172.819 18.898 173.66 19.7126C174.527 20.5271 174.961 21.6438 174.961 23.0626ZM193.235 38.7094C193.235 42.5456 192.25 45.6855 190.279 48.129C188.335 50.5989 185.681 51.8338 182.318 51.8338C178.981 51.8338 176.761 51.0062 175.657 49.3508C174.974 48.2998 174.632 47.0123 174.632 45.4884C174.632 43.9907 174.764 42.493 175.026 40.9954L180.071 12.4606H186.771L185.589 19.0425H195.403L194.417 24.5997H186.693C188.558 26.0974 190.108 28.0418 191.343 30.4328C192.604 32.8238 193.235 35.5827 193.235 38.7094ZM183.342 46.1978C184.157 46.1978 184.853 45.5409 185.431 44.2272C186.009 42.9134 186.298 41.1793 186.298 39.0247C186.298 36.8964 186.075 34.7419 185.628 32.5611C185.208 30.3802 184.696 28.6724 184.091 27.4374L181.727 40.9559C181.569 41.8756 181.49 42.677 181.49 43.3601C181.49 45.2519 182.108 46.1978 183.342 46.1978ZM204.489 38.5518C199.024 38.5518 196.292 36.66 196.292 32.8764C196.292 32.3509 196.344 31.7859 196.449 31.1816L197.277 26.2945C197.724 23.7721 198.88 21.8408 200.745 20.5008C202.637 19.1345 205.133 18.4514 208.234 18.4514C213.515 18.4514 216.156 20.4483 216.156 24.4421C216.156 25.0201 216.103 25.6507 215.998 26.3339L215.525 29.1322H203.504L203.347 30.0387C203.294 30.354 203.268 30.643 203.268 30.9057C203.268 32.3509 204.122 33.0734 205.83 33.0734C206.46 33.0734 206.999 32.8764 207.445 32.4822C207.892 32.0881 208.155 31.6283 208.234 31.1028L214.776 31.1816C213.909 36.0951 210.48 38.5518 204.489 38.5518ZM209.219 26.728C209.324 26.2813 209.377 25.8741 209.377 25.5062C209.377 25.1121 209.206 24.718 208.864 24.3238C208.523 23.9297 207.971 23.7326 207.209 23.7326C206.473 23.7326 205.79 23.9823 205.159 24.4815C204.555 24.9807 204.135 25.7296 203.898 26.728H209.219ZM226.236 38.5518C220.77 38.5518 218.038 36.66 218.038 32.8764C218.038 32.3509 218.09 31.7859 218.196 31.1816L219.023 26.2945C219.444 23.7721 220.587 21.8408 222.452 20.5008C224.344 19.1608 226.735 18.4776 229.625 18.4514C235.222 18.4514 238.02 20.3957 238.02 24.2844C238.02 25.1252 237.915 25.8872 237.705 26.5704C237.521 27.2272 237.324 27.6739 237.114 27.9104L236.798 28.3045H230.098C230.755 27.7265 231.083 27.0433 231.083 26.2551C231.083 24.8362 230.374 24.1268 228.955 24.1268C228.114 24.1268 227.392 24.3764 226.787 24.8756C226.183 25.3748 225.789 26.1368 225.605 27.1615L225.093 30.0387C225.04 30.3014 225.014 30.551 225.014 30.7875C225.014 32.1801 225.881 32.8764 227.615 32.8764C228.193 32.8764 228.706 32.6924 229.152 32.3246C229.625 31.9567 229.901 31.5495 229.98 31.1028L236.522 31.1816C235.655 36.0951 232.226 38.5518 226.236 38.5518ZM248.378 38.5518C245.33 38.5518 243.136 37.8686 241.796 36.5023C240.797 35.5039 240.298 34.1638 240.298 32.4822C240.298 31.9305 240.351 31.3393 240.456 30.7087L243.136 15.456L250.348 12.4606L249.206 19.0425H260.083L259.098 24.5997H248.22L247.432 29.0533C247.327 29.5526 247.274 29.9992 247.274 30.3934C247.274 32.0487 248.063 32.8764 249.639 32.8764C250.48 32.8764 251.176 32.5217 251.728 31.8122C252.306 31.1028 252.7 30.1569 252.91 28.9745H259.453C258.349 35.3594 254.658 38.5518 248.378 38.5518Z" fill="#474350"/>
+                    </g>
+                </g>
+                <g id="logo">
+                    <g id="orange">
+                        <g id="CatDog">
+                            <path d="M51.7322 32.0334L48.2673 26.2819L48.8739 24.6713L52.658 11.1389H55.9793L58.13 23.2723H60.4713L68.7201 10.1978L72.232 11.1389L73.7021 27.5202L80.5081 30.3183C81.4643 36.0739 86.8432 36.7948 91.5923 37.4313C93.8743 37.7372 96.0108 38.0235 97.4414 38.8396V52.3974C94.8455 55.7298 93.5387 57.7816 91.4249 61.7073C89.487 62.237 87.06 62.2384 84.5533 62.2398C79.7877 62.2425 74.734 62.2454 72.2048 65.8789C72.2048 65.8789 70.0277 71.1438 66.8689 71.8084C65.1135 72.1777 62.2953 71.2862 62.2953 71.2862C62.2953 71.2862 59.3222 63.7451 58.9142 59.2989C58.9064 59.2146 58.899 59.128 58.8918 59.0393C64.1923 54.1491 73.5937 44.0386 69.031 37.397C68.8234 37.0949 68.6209 36.7931 68.4206 36.4947C66.6245 33.8185 65.0127 31.4169 61.5916 31.4638C58.2713 31.5094 56.7387 36.1319 56.072 39.3691L51.7322 32.0334Z" fill="#CC7F3B"/>
+                            <path d="M49.3674 34.03L46.8319 29.7441L41.2122 20.4158L38.6239 19.6094L38.9037 28.5453L32.4446 19.6094L30.6958 20.4158L27.1048 28.5453C27.8265 31.5162 28.1774 32.1851 28.1774 32.1851L22.3479 34.5825C19.5064 38 17.7753 39.7294 14 41.8839V46.2211C16.2234 49.0764 17.3428 50.8344 19.1533 54.198C23.9688 55.5148 26.1541 57.424 29.4599 62.175L36.2221 71.8084C41.3252 73.7019 44.2044 74.201 49.3969 73.3123C53.1203 72.4257 54.8357 71.4328 57.395 68.9968C57.395 68.9968 55.9406 65.308 54.9267 61.5691C51.3169 59.8427 34.6027 51.3132 36.991 42.4627C38.2606 37.7577 39.929 33.2712 45.0232 32.6113C46.562 32.4119 48.0351 33.025 49.3674 34.03Z" fill="#CC7F3B"/>
+                        </g>
+                    </g>
+                    <g id="purple">
+                        <path id="heart" d="M46.6642 35.8145C51.319 35.2118 56.0176 44.7709 56.0176 44.7709C56.0176 44.7709 58.0583 34.6941 62.1989 34.6374C65.2776 34.5951 67.1291 36.6581 67.8923 39.2947C70.0775 46.8437 55.4431 59.0756 55.4431 59.0756C55.4431 59.0756 38.207 51.3802 40.3728 43.3589C41.4008 39.5517 42.5397 36.3485 46.6642 35.8145Z" fill="#9590a8"/>
+                    </g>
+                </g>
+            </g>
+          </svg> 
+        </a>                          
+      </div>
+
+      <div class="nav__list">
+        <div class="nav__dropdown--services">
+          <h6 id="NavServicesLink" class="links" onclick="toggleDropdownList(event)">Services</h6>
+          <div id="NavServicesLink" class="nav__dropdown-content box--light">
+            <a class="links CheckUp" href="">Check Up</a>
+            <a class="links Vaccination" href="">Vaccination</a>       
+            <a class="links UrgencyHour" href="">24-Hour Vet</a>     
+            <a class="links PetSterilization" href="">Sterilization</a>       
+            <a class="links PetGrooming" href="">Grooming</a>        
+            <a class="links HomeVeterinaryCare" href="">Home Vet</a>        
+            <a class="links ChipPlacement" href="">Chip Placement</a>          
+          </div>
+        </div><!--Services-->
+        <a class="links about__link NavListAbout" href="/FURFECT/about/about.html">About</a>
+        <a class="links contacts__link NavListContacts" href="/FURFECT/contacts/contacts.html">Contacts</a>
+        <a class="links blog__link NavListBlog" href="/FURFECT/blog/blog.html">Blog</a>
+      </div>
+      
+      <!--user account management-->
+
+      <button class="hamburger btn btn--fx" onclick="toggleSidebar()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      
+      <div class="user">
+        <button class="login btn btn--fx box--orange" onclick="openModal('login')">Log In</button>
+        <button class="signin btn btn--fx box--purple" onclick="openModal('signin')">Sign In</button>
+        <div id="modal" class="modal" onclick="closeModal(event)">
+            <div class="modal-content" onclick="event.stopPropagation();">
+                <span class="close__modal" onclick="closeModal(event)" style="cursor:pointer;">&times;</span>
+                <h2 id="modalTitle">Título do Modal</h2>
+                <form id="modalForm" onsubmit="handleFormSubmit(event)">
+                    <div id="formFields"></div>
+                    <button type="submit" id="submitButton">Enviar</button>
+                </form>
+                <p id="toggleText"></p>
+            </div>
+        </div>
+
+        <button class="user-access btn btn--fx" onclick="openModal('user')">
+            <img class="img__user" src="/" alt="Imagem do Usuário" id="userImage">
+        </button>
+        <span class="logout links" onclick="logout()">Sair</span>
+      </div>
+    </nav>            
+
+    <div class="overlay__Header" id="overlay" onclick="toggleSidebar()"></div>
+    
+    <div id="nav__sidebar" class="nav__sidebar">
+      <button class="exit btn btn--fx" onclick="toggleSidebar()">x</button>
+      <div class="links_wrapper">
+        <a class="links" href="/FURFECT/about/about.html">About</a>
+        <a class="links" href="/FURFECT/contacts/contacts.html">Contacts</a>
+        <a class="links" href="/FURFECT/blog/blog.html">Blog</a>
+      </div>
+      <details class="sidebar_services">
+        <summary class="links navTitle">Services</summary>        
+        <a class="links__light CheckUp" href="">Check Up</a>
+        <a class="links__light Vaccination" href="">Vaccination</a>       
+        <a class="links__light UrgencyHour" href="">24-Hour Vet</a>     
+        <a class="links__light PetSterilization" href="">Sterilization</a>       
+        <a class="links__light PetGrooming" href="">Grooming</a>        
+        <a class="links__light HomeVeterinaryCare" href="">Home Vet</a>        
+        <a class="links__light ChipPlacement" href="">Chip Placement</a>
+      </details>
+      <div class="user">
+        <button class="login btn btn--fx box--orange" onclick="openModal('login')">Log In</button>
+        <button class="signin btn btn--fx box--purple" onclick="openModal('signin')">Sign In</button>
+        <div id="modal" class="modal" onclick="closeModal(event)">
+            <div class="modal-content" onclick="event.stopPropagation();">
+                <span class="close__modal" onclick="closeModal(event)" style="cursor:pointer;">&times;</span>
+                <h2 id="modalTitle">Título do Modal</h2>
+                <form id="modalForm" onsubmit="handleFormSubmit(event)">
+                    <div id="formFields"></div>
+                    <button type="submit" id="submitButton">Enviar</button>
+                </form>
+                <p id="toggleText"></p>
+            </div>
+        </div>
+
+        <button class="user-access btn btn--fx" onclick="openModal('user')">
+            <img class="img__user" src="/" alt="Imagem do Usuário" id="userImage">
+        </button>
+        <span class="logout links" onclick="logout()">Sair</span>
+      </div>
+    </div>
+    
+    <div class="hero__home brnd_style--in">
+        <div class="slogan">
+            <h5 class="serviceDescription txt_style-1">Animal health and welfare services</h5>
+            <h1 class="mainTitle txt_style-2">Happy pet, happy vet</h1>
+        </div>
+
+        <aside class="nav__services--hero">
+          <nav class="services__brief_cards_content">
+            <div id="serviceCardContent" class="nav__brief_container">
+              <div class="nav__services_brief brnd_style--out box--light">
+                <h6 class="title navTitle">Services</h6>
+                <p class="serviceBriefText">At our veterinary clinic, we offer a variety of services to care for your pet</p>
+                <button id="showServices" class="btn btn--fx box--green btnTextTransl" type="button">Check our services</button>
+              </div>
+            </div>
+
+            <button id="closeBtn" class="hidden_service services__btn-close btn btn--fx" type="button">X</button>
+            
+            <div id="nav__services" class="hidden_service service__cards_wrapper">  
+              <div class="service__cards_carousel">
+    
+                <div class="aside_cards brnd_style--out box--purple Check-up">       
+                  <h6 class="title CheckUp">Check Up</h6>   
+                  <p class="CheckUpResume">Crucial for your pet's health, which include thorough exams, current vaccinations, lab tests, nutritional advice, and early disease detection.</p>
+                  <a class="links__light btnAppointment" href="#">Make an Appointment</a>
+                </div>
+    
+                <div class="aside_cards  brnd_style--out box--purple vaccination">        
+                  <h6 class="title Vaccination">Pet Vaccination Services</h6>
+                  <p class="VaccinationResume">Keep your pets healthy with our vaccination services. We offer a range of vaccines to protect against common diseases.</p>
+                  <a class="links__light btnAppointment" href="#">Make an Appointment</a>
+                </div>
+    
+                <div class="aside_cards brnd_style--out box--purple">        
+                  <h6 class="title UrgencyHour">24-Hour Veterinary Clinic</h6>
+                  <p class="UrgencyHourResume">Our 24-hour veterinary clinic provides comprehensive emergency care, with experienced veterinarians available at all times to ensure the best treatment for your pet.</p>
+                  <a class="links__light btnAppointment" href="#">Make an Appointment</a>
+                </div>
+
+                <div class="aside_cards brnd_style--out  box--purple">        
+                  <h6 class="title PetSterilization">Pet Sterilization</h6>
+                  <p class="PetSterilizationResume">Sterilization is a surgical procedure that controls pet population and promotes health by preventing diseases and undesirable behaviors.</p>
+                  <a class="links__light btnAppointment" href="#">Make an Appointment</a>
+                </div>
+    
+                <div class="aside_cards brnd_style--out box--purple">        
+                  <h6 class="title PetGrooming">Pet Grooming</h6>
+                  <p class="PetGroomingResume">We offer grooming services both in-clinic and at home, including bathing, haircuts, and nail trimming. Regular grooming is essential for your pet's hygiene.</p>
+                  <a class="links__light btnAppointment" href="#">Make an Appointment</a>
+                </div>
+                
+                <div class="aside_cards brnd_style--out box--purple">        
+                  <h6 class="title HomeVeterinaryCare">Home Veterinary Care</h6>
+                  <p class="HomeVeterinaryCareResume">Our 24-hour veterinary clinic provides comprehensive emergency care for pets. Our experienced veterinarians are available around the clock to ensure your pet receives the best possible treatment at any time of day or night.</p>
+                  <a class="links__light btnAppointment" href="#">Make an Appointment</a>
+                </div>
+    
+                <div class="aside_cards brnd_style--out box--purple">        
+                  <h6 class="title ChipPlacement">Chip Placement</h6>
+                  <p class="ChipPlacementResume">The placement of an identification chip is vital for the safety of animals, allowing for their recovery if lost and helping to prevent abandonment.</p>
+                  <a class="links__light btnAppointment" href="#">Make an Appointment</a>
+                </div>
+    
+                <div class="aside_cards brnd_style--out box--purple">        
+                  <h6 class="title The__Title ">title</h6>
+                  <p class="The__Title-Resume">resumo</p>
+                  <a class="links__light btnAppointment" href="#">Make an Appointment</a>
+                </div>
+
+              </div>
+            </div>
+            
+          </nav>
+        </aside>
+    </div>
+  </header>
+
+  <main class="brnd_style--out box--light">
+    <section class="main__about">
+        <p class="mission ourMission box--green">Our mission is to provide the best care for animals, always with a natural and community-focused approach.</p>
+        <div class="about_intro box--orange brnd_style--out">
+            <div class="team_carrousel_home brnd_style--in box--purple">
+              <div class="slider-container brnd_style--out">
+                <div class="slider">
+                    
+                  <div class="slide">
+                    <span class="info btn box--transparent" onclick='openTeamInfo()'>i</span>
+                    <div class="overlay__team">
+                      <h5 class="TeamName name__title box--transparent">Aux. Ana Silva</h5>
+                      <ui class="AreaResumeList experties title box--transparent">
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                      </ui>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1724770646663-2a806ed04ca4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                  </div>
+
+                  <div class="slide">
+                    <span class="info btn box--transparent" onclick='openTeamInfo()'>i</span>
+                    <div class="overlay__team">
+                      <h5 class="TeamName name__title box--transparent">Dr. Zé</h5>
+                      <ui class="AreaResumeList experties title box--transparent">
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                      </ui>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1724770646663-2a806ed04ca4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 3">
+                  </div>
+
+                  <div class="slide">
+                    <span class="info btn box--transparent" onclick='openTeamInfo()'>i</span>
+                    <div class="overlay__team">
+                      <h5 class="TeamName name__title box--transparent">Dr. Zé</h5>
+                      <ui class="AreaResumeList experties title box--transparent">
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                      </ui>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1724770646663-2a806ed04ca4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 4">
+                  </div>
+
+                  <div class="slide">
+                    <span class="info btn box--transparent" onclick='openTeamInfo()'>i</span>
+                    <div class="overlay__team">
+                      <h5 class="TeamName name__title box--transparent">Dr. Zé</h5>
+                      <ui class="AreaResumeList experties title box--transparent">
+                          <li>1 area que trabalha</li>
+                          <li>1 area que trabalha</li>
+                          <li>1 area que trabalha</li>
+                          <li>1 area que trabalha</li>
+                      </ui>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1724770646663-2a806ed04ca4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 5">
+                  </div>
+
+                  <div class="slide">
+                    <span class="info btn box--transparent" onclick='openTeamInfo()'>i</span>
+                    <div class="overlay__team">
+                      <h5 class="TeamName name__title box--transparent">Dr. Zé</h5>
+                      <ui class="AreaResumeList experties title box--transparent">
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                      </ui>
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1724770646663-2a806ed04ca4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 6">
+                  </div>
+
+                  <div class="slide">
+                    <span class="info btn box--transparent" onclick='openTeamInfo()'>i</span>
+                    <div class="overlay__team">
+                      <h5 class="TeamName name__title box--transparent">Dr. Zé</h5>
+                      <ui class="AreaResumeList experties title box--transparent">
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                      </ui>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1724770646663-2a806ed04ca4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1">
+                  </div>
+                  
+                  <div class="slide">
+                    <span class="info btn box--transparent" onclick='openTeamInfo()'>i</span>
+                    <div class="overlay__team">
+                      <h5 class="TeamName name__title box--transparent">Dr. Zé</h5>
+                      <ui class="AreaResumeList experties title box--transparent">
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                      </ui>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1724770646663-2a806ed04ca4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2">
+                  </div>
+
+                  <div class="slide">
+                    <span class="info btn box--transparent" onclick='openTeamInfo()'>i</span>
+                    <div class="overlay__team">
+                      <h5 class="TeamName name__title box--transparent">Dr. Zé</h5>
+                      <ui class="AreaResumeList experties title box--transparent">
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                      </ui>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1724770646663-2a806ed04ca4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 3">
+                  </div>
+
+                  <div class="slide">
+                    <span class="info btn box--transparent" onclick='openTeamInfo()'>i</span>
+                    <div class="overlay__team">
+                      <h5 class="TeamName name__title box--transparent">Dr. Zé</h5>
+                      <ui class="AreaResumeList experties title box--transparent">
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                      </ui>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1724770646663-2a806ed04ca4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 4">
+                  </div>
+
+                  <div class="slide">
+                    <span class="info btn box--transparent" onclick='openTeamInfo()'>i</span>
+                    <div class="overlay__team">
+                      <h5 class="TeamName name__title box--transparent">Dr. Zé</h5>
+                      <ui class="AreaResumeList experties title box--transparent">
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                      </ui>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1724770646663-2a806ed04ca4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 5">
+                  </div>
+
+                  <div class="slide">
+                    <span class="info btn box--transparent" onclick='openTeamInfo()'>i</span>
+                    <div class="overlay__team">
+                      <h5 class="TeamName name__title box--transparent">Dr. Zé</h5>
+                      <ui class="AreaResumeList experties title box--transparent">
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                      </ui>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1724770646663-2a806ed04ca4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 6">
+                  </div>
+
+                  <div class="slide">
+                    <span class="info btn box--transparent" onclick='openTeamInfo()'>i</span>
+                    <div class="overlay__team">
+                      <h5 class="TeamName name__title box--transparent">Dr. Zé</h5>
+                      <ui class="AreaResumeList experties title box--transparent">
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                        <li>1 area que trabalha</li>
+                      </ui>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1724770646663-2a806ed04ca4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2">
+                  </div>
+
+                  
+                </div>
+                <button class="prev btn box--transparent">&#10094;</button>
+                <button class="next btn box--transparent">&#10095;</button>
+              </div>
+              <div class="dots-container btn brnd_style--out box--transparent">
+                <span class="dot" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="dot" data-index="5"></span>
+                <span class="dot" data-index="6"></span>
+                <span class="dot" data-index="7"></span>
+                <span class="dot" data-index="8"></span>
+                <span class="dot" data-index="9"></span>
+                <span class="dot" data-index="10"></span>
+                <span class="dot" data-index="11"></span>
+              </div>
+            </div>
+            <article class="team_brief">
+                <p class="team_brief-text teamBriefText">Our team is made up of dedicated professionals who are passionate about animal well-being. Each member brings extensive experience and a deep love for animals, ensuring your pet receives the best possible care.</p>
+                <a class="links__light btn__light--fx btn__light--big" href="#">some text</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="blog__about brnd_style--in">
+      <div class="blog_brief">
+          <p class="blog_brief-text blogBriefText brnd_style--out box--purple">Here is a summary of our blog, with tips and inspiring stories.</p>
+          <a class="btn btn--fx" href="#">See What's Up</a>
+      </div>
+      <div class="collection">
+          <article class="blog_res_content box--light brnd_style--out">
+              <img src="https://via.placeholder.com/200" alt="">
+              <div class="blog_res_content_text blg1">
+                <h6>Success Stories:</h6>
+                <p>Success Stories: Incredible Transformations: Before and After Adoption.</p>
+              </div>
+          </article>
+          <article class="blog_res_content box--light brnd_style--out">
+              <img src="https://via.placeholder.com/200" alt="">
+              <div class="blog_res_content_text blg2">
+                <h6>Upcoming Activities and Events:</h6>
+                <p>Upcoming Activities and Events: Group Walks: Join Us for a Walk with Your Pet.</p>
+            </div>
+
+              </article>
+          <article class="blog_res_content box--light brnd_style--out">
+              <img src="https://via.placeholder.com/200" alt="">
+              <div class="blog_res_content_text blg3">
+                <h6>Tips and Tricks:</h6>
+                <p>Furfect Tips and Tricks: 5 Tricks to Keep Your Pet Entertained and Stimulated at Home.</p>
+            </div>
+
+              </article>
+          <article class="blog_res_content box--light brnd_style--out">
+              <img src="https://via.placeholder.com/200" alt="">
+              <div class="blog_res_content_text blg4">
+                <h6>News from Volunteer Activities:</h6>
+                <p>News from our volunteer activities successful rescue: Inspiring Stories from Our Volunteers.</p>
+              </div>
+          </article>
+          <article class="blog_res_content box--light brnd_style--out">
+              <img src="https://via.placeholder.com/200" alt="">
+              <div class="blog_res_content_text blg5">
+                <h6>Raising Awareness for Pet Care:</h6>
+                <p>Raising the awareness for Pet Care. The Importance of Vaccinations: Keeping Your Pet Healthy and Protected.</p>
+
+              </div>
+          </article>
+      </div>
+    </section>
+
+    <section class="shop__about brnd_style--in">
+      <div class="items_carousel_container">
+        <div class="items_wraper">
+          
+          <div class="items brnd_style--out">
+            <img src="https://via.placeholder.com/150" alt="">
+            <h6 class="article1">artigo1</h6>
+          </div>
+
+          <div class="items brnd_style--out">
+            <img src="https://via.placeholder.com/150" alt="">
+            <h6 class="article2">artigo1</h6>
+          </div>
+          
+          <div class="items brnd_style--out">
+            <img src="https://via.placeholder.com/150" alt="">
+            <h6 class="article3">artigo1</h6>
+          </div>
+          
+          <div class="items brnd_style--out">
+            <img src="https://via.placeholder.com/150" alt="">
+            <h6 class="article4">artigo1</h6>
+          </div>
+          
+          <div class="items brnd_style--out">
+            <img src="https://via.placeholder.com/150" alt="">
+            <h6 class="article5">artigo1</h6>
+          </div>
+          
+          <div class="items brnd_style--out">
+            <img src="https://via.placeholder.com/150" alt="">
+            <h6 class="article6">artigo1</h6>
+          </div>
+          
+          <div class="items brnd_style--out">
+            <img src="https://via.placeholder.com/150" alt="">
+            <h6 class="article7">artigo1</h6>
+          </div>
+
+        </div>
+      </div>
+      <button class="btn btn--fx shopping">
+        <a href="/FURFECT/petshop/petshop.html">Visit our shop</a>
+      </button>
+      
+      <article class="brands__carousel" data-direction="left" data-speed="slow">
+        <div class="brands__wraper">
+            <div class="shop__brand">Item 1</div>
+            <div class="shop__brand">Item 2</div>
+            <div class="shop__brand">Item 3</div>
+            <div class="shop__brand">Item 4</div>
+            <div class="shop__brand">Item 5</div>
+            <div class="shop__brand">Item 1</div>
+            <div class="shop__brand">Item 2</div>
+            <div class="shop__brand">Item 3</div>
+            <div class="shop__brand">Item 4</div>
+            <div class="shop__brand">Item 5</div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__header">
         <div class="footer__header-socials">
             <div class="brand brnd_style--out box--light">
-                <a href="home.html">
+                <a href="/FURFECT/home/home.html">
                   <svg width="175" height="164" viewBox="0 0 175 164" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Brand_var2">
                       <g id="name">
@@ -297,3 +838,9 @@
     </div>        
     <p>&copy; 2024 Furfect-Health & Care. Todos os direitos reservados.</p>
   </footer>
+  
+  <script src="home.js" defer></script>
+  <script src="/base.js" defer></script>
+</body>
+</html>
+
