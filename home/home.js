@@ -36,6 +36,7 @@ document.addEventListener('click', function(event) {
     }
 });
 //=======================================end aside=======================================
+
 //=================================== start team slide ==================================
 const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');
@@ -192,16 +193,35 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //==================================== end team slide ===================================
+
+//================================ start shop image modal ===============================
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+var span = document.getElementsByClassName("close")[0];
+
+// Seleciona todas as imagens da galeria
+var images = document.querySelectorAll("img");
+images.forEach(function(img) {
+    img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+    }
+});
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+//================================= end shop image modal ================================
+
 //================================== start scroll brand =================================
 
 const scrollers = document.querySelectorAll(".brands__carousel");
-
-// If a user hasn't opted in for recuded motion, then we add the animation
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  addAnimation();
-}
-
-
 function addAnimation() {
   scrollers.forEach((scroller) => { //scroller
     // add data-animated="true" to every `.brands__carousel` on the page
@@ -211,11 +231,11 @@ function addAnimation() {
     const scrollerInner = scroller.querySelector(".brands__wraper");
     const scrollerContent = Array.from(scrollerInner.children);
     
-    scrollerContent.forEach((item) => {
-      const duplicatedItem = item.cloneNode(true);
+    scrollerContent.forEach((svg) => {
+      const duplicatedItem = svg.cloneNode(true);
       duplicatedItem.setAttribute("aria-hidden", true);
       scrollerInner.appendChild(duplicatedItem);
     });
   });
 }
-//================================== end scroll brand  =================================
+//================================== end scroll brand  ==================================
