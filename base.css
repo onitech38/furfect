@@ -355,7 +355,7 @@ html :not(.home) header {
   fill-opacity: .25;
 }
 
-header {
+header { /*webflow*/
     height: 30rem;/*30rem*/
     width: 100%;    
     max-width: var(--breakpoint-container--full);
@@ -363,7 +363,7 @@ header {
     flex-direction: column;
     align-items: center;
 }
-.header_sub {
+.header_sub { /*webflow*/
     width: 100%;    
     max-width: var(--breakpoint-container--full);
     display: flex;
@@ -371,13 +371,13 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.contacts {
+.contacts { /*webflow*/
     height: auto;
     font-size: x-small;
     display: flex;
 }
 
-#language-selector {
+#language-selector { /*webflow*/
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -394,7 +394,7 @@ header {
     }  
 }       
     
-.nav__wrapper {
+.nav__wrapper { /*webflow*/
     width: 100%;      
     max-width: var(--breakpoint-container--full);
     position: relative;
@@ -404,7 +404,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.svg__brand-nav {
+.svg__brand-nav { /*webflow*/
     width: 12.5rem;
     & #green>path {
         fill: var(--green);
@@ -429,16 +429,16 @@ header {
     }
 }
         
-.nav__list {
+.nav__list { /*webflow*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.nav__dropdown--services {
+.nav__dropdown--services { /*webflow*/
     position: relative;
 }
-.nav__dropdown-content {
+.nav__dropdown-content { /*webflow*/
     position: absolute;
     top: 100%;
     left: 0;

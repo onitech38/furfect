@@ -456,11 +456,6 @@ aside {
 }
 
 
-
-
-
-
-
 .brands__carousel {
 max-width: 600px;
 }
@@ -512,10 +507,6 @@ animation: scroll var(--_animation-duration, 40s)
       transform: translate(calc(-50% - 0.5rem));
     }
 }
-
-
-
-
 
 
 
