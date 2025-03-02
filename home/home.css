@@ -1,4 +1,3 @@
-/*============================ hero ==========================*/
 .hero__home {
     width: 95%;
     height: 50rem;    
@@ -94,10 +93,7 @@ aside {
         text-transform: uppercase;
     }
 }
-/*========================= end hero =========================*/
 
-
-/*============================ main ==========================*/
 
 .main__about {
     width: 100%;
@@ -360,6 +356,12 @@ aside {
     & h6 {
         margin-top: .5rem;
     }
+    & button {
+        width:10rem;
+        height:5rem;
+        align-self: center;
+        
+    }
     img {
         cursor:pointer;
         border: var(--border);
@@ -391,11 +393,7 @@ aside {
         font-size: 40px;
         font-weight: bold;
         cursor: pointer;
-    }
-    & button {
-        align-self: center;
-    }
-  
+    }  
     & .brands__carousel {
         margin-left: var(--x);
         padding-inline: var(--gap-in-section);
@@ -419,87 +417,86 @@ aside {
     }
     
 
-  & .brands__carousel[data-animated="true"] {
+    & .brands__carousel[data-animated="true"] {
+        overflow: hidden;
+        -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+        );
+        mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    }
+
+    & .brands__carousel[data-animated="true"] .brands__wraper {
+        width: max-content;
+        flex-wrap: nowrap;
+        animation: scroll var(--_animation-duration, 40s)
+        var(--_animation-direction, forwards) linear infinite;
+    }
+
+    & .brands__carousel[data-direction="right"] {
+        --_animation-direction: reverse;
+    }
+
+    & .brands__carousel[data-direction="left"] {
+        --_animation-direction: forwards;
+    }
+
+    & .brands__carousel[data-speed="fast"] {
+        --_animation-duration: 20s;
+    }
+
+    & .brands__carousel[data-speed="slow"] {
+        --_animation-duration: 60s;
+    }
+
+
+    &.brands__carousel {
+        max-width: 600px;
+    }
+
+    &.scroller__inner {
+        padding-block: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    &.brands__carousel[data-animated="true"] {
     overflow: hidden;
-    -webkit-mask: linear-gradient(
-      90deg,
-      transparent,
-      white 20%,
-      white 80%,
-      transparent
-    );
-    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-  }
+        -webkit-mask: linear-gradient(
+            90deg,
+            transparent,
+            white 20%,
+            white 80%,
+            transparent
+        );
+        mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    }
 
-  & .brands__carousel[data-animated="true"] .brands__wraper {
-    width: max-content;
-    flex-wrap: nowrap;
-    animation: scroll var(--_animation-duration, 40s)
-      var(--_animation-direction, forwards) linear infinite;
-  }
+    &.brands__carousel[data-animated="true"] .scroller__inner {
+        width: max-content;
+        flex-wrap: nowrap;
+        animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+    }
 
-  & .brands__carousel[data-direction="right"] {
+    &.brands__carousel[data-direction="right"] {
     --_animation-direction: reverse;
-  }
+    }
 
-  & .brands__carousel[data-direction="left"] {
+    &.brands__carousel[data-direction="left"] {
     --_animation-direction: forwards;
-  }
+    }
 
-  & .brands__carousel[data-speed="fast"] {
+    &.brands__carousel[data-speed="fast"] {
     --_animation-duration: 20s;
-  }
+    }
 
-  & .brands__carousel[data-speed="slow"] {
+    &.brands__carousel[data-speed="slow"] {
     --_animation-duration: 60s;
-  }
-}
-
-
-.brands__carousel {
-max-width: 600px;
-}
-
-.scroller__inner {
-padding-block: 1rem;
-display: flex;
-flex-wrap: wrap;
-gap: 1rem;
-}
-
-.brands__carousel[data-animated="true"] {
-overflow: hidden;
--webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 20%,
-    white 80%,
-    transparent
-);
-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
-
-.brands__carousel[data-animated="true"] .scroller__inner {
-width: max-content;
-flex-wrap: nowrap;
-animation: scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
-}
-
-.brands__carousel[data-direction="right"] {
---_animation-direction: reverse;
-}
-
-.brands__carousel[data-direction="left"] {
---_animation-direction: forwards;
-}
-
-.brands__carousel[data-speed="fast"] {
---_animation-duration: 20s;
-}
-
-.brands__carousel[data-speed="slow"] {
---_animation-duration: 60s;
+    }
 }
 
 @keyframes scroll { 
@@ -507,9 +504,6 @@ animation: scroll var(--_animation-duration, 40s)
       transform: translate(calc(-50% - 0.5rem));
     }
 }
-
-
-
 
 ._comments {
     border: var(--border);
