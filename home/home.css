@@ -131,10 +131,7 @@ aside {
         justify-content: center;
         align-items: center;
         overflow-x: hidden;
-    }    
-    & .teamBriefText {
-        margin-bottom: 2rem;
-    }  
+    } 
     & .slider-container {
         position: relative;
         width: auto;
@@ -187,6 +184,36 @@ aside {
         color: var(--light);
         transition: all 0.3s ease-in-out;    
     }
+    & .name__title {
+        width: 100%;
+        text-align: center;
+        border:var(--border);
+        border-radius: var(--border-radius);
+        color: inherit;
+       
+        transition: all 0.3s ease-in-out; /* Adicionando transição de opacidade */
+        opacity: 0;
+        position: relative;       
+    }
+    & .name__title.active {
+        opacity: 1;
+    }
+    & .experties {       
+        width: 100%;
+        text-align: center;
+        border:var(--border);
+        border-radius: var(--border-radius);
+        color: inherit;
+       
+        transition: all 0.3s ease-in-out; /* Adicionando transição de opacidade */
+        opacity: 0;
+        position: relative;
+        bottom:-100%;
+    }
+    & .experties.active {
+        opacity: 1;
+        bottom: 0;
+    }
     & .overlay__team:hover .name__title {
        opacity: 1;
     }
@@ -194,36 +221,9 @@ aside {
        opacity: 1;
        bottom: 0;
     }
-    & .name__title.active {
-       opacity: 1;
-    }
-    & .experties.active {
-        opacity: 1;
-        bottom: 0;
-    }
-    & .name__title {
-       width: 100%;
-       text-align: center;
-       border:var(--border);
-       border-radius: var(--border-radius);
-       color: inherit;
-      
-       transition: all 0.3s ease-in-out; /* Adicionando transição de opacidade */
-       opacity: 0;
-       position: relative;       
-    }
-    & .experties {       
-       width: 100%;
-       text-align: center;
-       border:var(--border);
-       border-radius: var(--border-radius);
-       color: inherit;
-      
-       transition: all 0.3s ease-in-out; /* Adicionando transição de opacidade */
-       opacity: 0;
-       position: relative;
-       bottom:-100%;
-    }
+    
+    
+    
     & .prev, .next {
         position: absolute;
         top: 50%;
@@ -264,7 +264,10 @@ aside {
     }
     &  .team_brief-text {
         margin-top: 5rem;
-    }     
+    }    
+    & .teamBriefText {
+        margin-bottom: 2rem;
+    }      
 }
 
 .blog__about {    
@@ -464,6 +467,7 @@ aside {
         gap: 1rem;
     }
 
+
     &.brands__carousel[data-animated="true"] {
     overflow: hidden;
         -webkit-mask: linear-gradient(
@@ -498,6 +502,11 @@ aside {
     --_animation-duration: 60s;
     }
 }
+._comments {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: var(--padding-elements);
+}
 
 @keyframes scroll { 
     to {
@@ -505,11 +514,6 @@ aside {
     }
 }
 
-._comments {
-    border: var(--border);
-    border-radius: var(--border-radius);
-    padding: var(--padding-elements);
-}
 
 @media screen and ( width < 500px) { /*phone/min - med*/
     .name__title {
@@ -537,5 +541,3 @@ aside {
   }
 }
 
-
-/*========================= end main =========================*/
